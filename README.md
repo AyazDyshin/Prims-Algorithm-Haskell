@@ -1,8 +1,8 @@
-# Prim's Algorithm implementation in Haskell, with optimzied priority queue, using double red-black tree apporach.
+# Prim's (Jarník's) Algorithm implementation in Haskell, with optimzied priority queue, using double red-black tree apporach.
 
-This is a semester project for Non-procedural Programming (NPRG005) course.
+This is a semester project for Non-procedural Programming (NPRG005) course in Charles University.
 
-##Some implementation details:
+## Some implementation details:
 
 In order to implement Prim's algorithm there is a need in priority queue data structure.
 
@@ -10,11 +10,11 @@ In a naive implementation of such a structure, an unordered list can be used, th
 
 In order to optimize the algorithm a more efficient data structure was used, which is Red-black tree. (can be found here: https://github.com/AyazDyshin/Red-Black-Tree-Haskell). In such case insertions will run in O(log N), and removing the smallest element will also take O(log N).
 
-###Problem with implementation of decreaseKey:
+### Problem with implementation of decreaseKey:
 
 If red-black tree is used then to find a given value in the tree the algorithm will need to search the entire tree, which will take O(N) time.
 
-###Solution:
+### Solution:
 
 To solve this issue a following trick was used:
 
