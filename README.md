@@ -1,4 +1,4 @@
-# Prim's Algorithm implementation in Haskell, with several performance optimization, using red-black tree data structure.
+# Prim's Algorithm implementation in Haskell, with optimzied priority queue, using double red-black tree apporach.
 
 This is a semester project for Non-procedural Programming (NPRG005) course.
 
